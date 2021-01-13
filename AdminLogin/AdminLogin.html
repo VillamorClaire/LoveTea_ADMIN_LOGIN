@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            background: url(teaBg.jpg);
+            padding: 4%;
+            padding-top: 2.5%;
+            width: 100%;
+            height: 730px;
+        }
+        
+        .container2 {
+            background: hsl(0, 0%, 100%);
+            padding-top: 0px;
+            width: 89%;
+            height: 629px;
+            margin-left: 6.5%;
+            border-radius: 10px;
+            box-shadow: 2px 4px 15px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .container3 {
+            position: relative;
+            width: 100%;
+        }
+        
+        .column {
+            float: left;
+            width: 46%;
+            padding: 0px;
+            margin-top: 0px;
+        }
+        
+        .column1 {
+            float: left;
+            width: 30.7%;
+            padding: 0px;
+        }
+        
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        
+        .container4 {
+            border-radius: 5px;
+            background-color: #f8dbdb;
+            padding: 20px;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        html,
+        body {
+            display: grid;
+            height: 100%;
+            width: 100%;
+            place-items: center;
+            /* background: linear-gradient(-135deg, #c850c0, #4158d0); */
+        }
+        
+         ::selection {
+            background: #d0a341;
+        }
+        
+        .wrapper {
+            width: 380px;
+            border-radius: 15px;
+            padding-top: 0px;
+        }
+        
+        .wrapper .title {
+            font-size: 35px;
+            font-weight: 600;
+            text-align: center;
+            line-height: 100px;
+            color: rgb(61, 60, 60);
+            user-select: none;
+        }
+        
+        .wrapper .title1 {
+            font-size: 20px;
+            font-weight: 400;
+            text-align: left;
+            line-height: 100px;
+            color: rgb(129, 129, 129);
+            user-select: none;
+            border-radius: 15px 15px 0 0;
+            background: linear-gradient(-135deg, #c850c0, #4158d0);
+        }
+        
+        .wrapper form {
+            padding: 0px;
+        }
+        
+        .wrapper form .field {
+            height: 50px;
+            width: 100%;
+            position: relative;
+        }
+        
+        .wrapper form .field input {
+            height: 100%;
+            width: 100%;
+            outline: none;
+            font-size: 17px;
+            padding-left: 20px;
+            border: 1px solid lightgrey;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+        }
+        
+        .wrapper form .field input:focus,
+        form .field input:valid {
+            border-color: #ec9d53;
+        }
+        
+        .wrapper form .field label {
+            position: absolute;
+            top: 50%;
+            left: 20px;
+            color: #999999;
+            font-weight: 400;
+            font-size: 17px;
+            pointer-events: none;
+            transform: translateY(-50%);
+            transition: all 0.3s ease;
+        }
+        
+        form .field input:focus~label,
+        form .field input:valid~label {
+            top: 0%;
+            font-size: 16px;
+            color: #121213;
+            background: #fff;
+            transform: translateY(-50%);
+        }
+        
+        form .content {
+            display: flex;
+            width: 100%;
+            height: 50px;
+            font-size: 16px;
+            align-items: center;
+            justify-content: space-around;
+        }
+        
+        form .content .checkbox {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        form .content input {
+            width: 15px;
+            height: 15px;
+            background: red;
+        }
+        
+        form .content label {
+            color: #030303;
+            user-select: none;
+            padding-left: 5px;
+        }
+        
+        form .content .pass-link {
+            color: "";
+        }
+        
+        form .field input[type="submit"] {
+            color: #fff;
+            border: none;
+            padding-left: 0;
+            margin-top: -10px;
+            font-size: 20px;
+            font-weight: 500;
+            cursor: pointer;
+            background-color: #e66b33;
+            transition: all 0.3s ease;
+        }
+        
+        form .field input[type="submit"]:active {
+            transform: scale(0.95);
+        }
+        
+        form .signup-link {
+            color: #262626;
+            margin-top: 20px;
+            text-align: center;
+        }
+        
+        form .pass-link a,
+        form .signup-link a {
+            color: #4158d0;
+            text-decoration: none;
+        }
+        
+        form .pass-link a:hover,
+        form .signup-link a:hover {
+            text-decoration: underline;
+        }
+        
+        .container5 {
+            margin-top: 0px;
+            background: linear-gradient(-135deg, #e66b33, #f392db);
+            width: 100%;
+            padding: 8px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            color: rgb(255, 255, 255);
+            font-weight: 600;
+            text-align: center;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="container2" style="margin-top: 1px;">
+            <div class="container5">
+                <p>ADMINISTRATOR AREA</p>
+            </div>
+            <div class="row">
+
+                <div class="column" style="margin-left: 40px;">
+                    <br><br>
+                    <div class="container3">
+                        <img src="Milk_Tea.png " alt="tea " style="width:550px ">
+
+
+
+                    </div>
+                </div>
+
+                <div class="column ">
+                    <div class="container3 " style="margin-left: 100px; ">
+
+                        <div class="wrapper"><br><br>
+                            <img src="employee.png" style="width: 170px; margin-left: 27%; color: darkgray;">
+
+                            <div class="title">Login</div>
+                            <form action="#">
+                                <div class="field">
+                                    <input type="text" required>
+                                    <label>Email Address</label>
+                                </div>
+                                <div class="field" style="  margin-top: 20px;">
+                                    <input type="password" required>
+                                    <label>Password</label>
+                                </div>
+                                <br>
+                                <div class="field" style="  margin-top: 20px;">
+                                    <input type="submit" value="Login">
+                                </div>
+                                <br>
+                                <p style="font-size: 13px; text-align: center; color: gray;">
+                                    <a href="#" style="color: gray;">Terms of Use. Privacy Policy</a></p>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    </div>
+
+</body>
+
+</html>
